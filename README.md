@@ -1,6 +1,6 @@
 # voiceAI
 
-The final capstone in the AIND, dealing with **Voice User Interfaces** and **Speech Recognition via Neural Nets!**.
+The third Capstone project as part of the [Artificial Intelligence Nanodegree](https://www.udacity.com/course/artificial-intelligence-nanodegree--nd889), and focusing on **Ppectrograms**, **Voice User Interfaces**, *Recurrent Neural Nets**, and **Speech Recognition**!
 
 ## Overview
 
