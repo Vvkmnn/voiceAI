@@ -20,23 +20,24 @@ We will use the [LibriSpeech dataset](http://www.openslr.org/12/) to train and e
 
 #### Model 1: RNN + TimeDistributed Dense
 
+![](./images/rnn_model.png)
+
+![](./images/rnn_model_unrolled.png)
+
 #### Model 2: CNN + RNN + TimeDistributed Dense
+
+![](./images/cnn_rnn_model.png)
 
 #### Model 3: Deeper RNN + TimeDistributed Dense
 
+![](./images/deep_rnn_model.png)
+
 #### Model 4: Bidirectional RNN + TimeDistributed Dense
+
+![](./images/bidirectional_rnn_model.png)
 
 #### Model 5: Final Model
 
-
-**TODO**: Fix this as project is completed. 
-![](./images/rnn_model.png)
-![](./images/rnn_model_unrolled.png)
-![](./images/bidirectional_rnn_model.png)
-![](./images/cnn_rnn_model.png)
-![](./images/deep_rnn_model.png)
-![](./images/simple_rnn.png)
-![](./images/simple_rnn_unrolled.png)
 
 ## Setup
 
