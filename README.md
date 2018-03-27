@@ -1,6 +1,6 @@
 # voiceAI
 
-The third Capstone project as part of the [Artificial Intelligence Nanodegree](https://www.udacity.com/course/artificial-intelligence-nanodegree--nd889), and focusing on **Ppectrograms**, **Voice User Interfaces**, **Recurrent Neural Nets**, and **Speech Recognition**!
+The third Capstone project as part of the [Artificial Intelligence Nanodegree](https://www.udacity.com/course/artificial-intelligence-nanodegree--nd889), and focusing on **Spectrograms**, **Voice User Interfaces**, **Recurrent Neural Nets**, and **Speech Recognition**!
 
 ## Overview
 
