@@ -40,7 +40,9 @@ We will use the [LibriSpeech dataset](http://www.openslr.org/12/) to train and e
 
 #### Model 6: Deep Bidirectional RNN + TimeDistributed with Dropout
 
-#### Model 8: CNN + RNN + TimeDistributed with Dropout              
+#### Model 7: CNN + RNN + TimeDistributed with Dropout              
+
+Never ran. Thanks Amazon. xD
 
 ## Setup
 
@@ -84,6 +86,21 @@ Start Jupyter, and connect via your IPv4 address:
 ```
 jupyter notebook --ip=0.0.0.0 --no-browser
 ```
+
+## Results
+
+![](loss.png)
+
+|Model   | Description                                           | Lowest Validation Loss | 
+| ------- | ----------------------------------------------------- | ---------------------- | 
+| Model 0 | RNN                                                   | 752.6974 | 727.2684
+| Model 1 | RNN + TimeDistributed                                 | 137.8584| 142.0406
+| Model 2 | CNN + RNN + TimeDistributed                           | 80.1717 | 141.2940
+| Model 3 | Deep RNN + TimeDistributed                            | 97.7769 | 120.1020
+| Model 4 | Bidirectional RNN + TimeDistributed                   | 98.5222 | 134.2463               |
+| Model 5 | Deep Bidirectional RNN + TimeDistributed              | N/A                    |N/A |
+| Model 6 | Deep Bidirectional RNN + TimeDistributed with Dropout | N/A                    |N/A |
+| Model 7 | CNN + RNN + TimeDistributed with Dropout              | N/A                    |N/A |
 
 ## Thanks
 
