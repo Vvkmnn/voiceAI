@@ -36,14 +36,22 @@ We will use the [LibriSpeech dataset](http://www.openslr.org/12/) to train and e
 
 ![](./images/bidirectional_rnn_model.png)
 
-#### Model 5: Final Model
+#### Model 5: Deep Bidirectional RNN + TimeDistributed             
 
+#### Model 6: Deep Bidirectional RNN + TimeDistributed with Dropout
+
+#### Model 8: CNN + RNN + TimeDistributed with Dropout              
 
 ## Setup
 
-Install the [`libav` package](https://libav.org/download/):
+Run via [Amazon Elastic Compute Cloud](https://aws.amazon.com/ec2/), using [The Deep Learning AMI with Cuda Support!](https://aws.amazon.com/marketplace/fulfillment?productId=8011986f-8b40-4ce3-9eed-1f877ce4d941&ref_=dtl_psb_continue) on a `p2.xlarge` GPU instance: 
+
+First, prepping the instance with [Tensorflow]((https://www.tensorflow.org/) and friends, and the audio processing library; [`libav`](https://libav.org/download/):
 ```
-brew install libav
+sudo python3 -m pip install tensorflow-gpu==1.1 udacity-pa tqdm
+sudo apt-get install libav-tools
+sudo python3 -m pip install python_speech_features librosa soundfile
+install libav
 ```
 
 Obtain the appropriate subsets of the LibriSpeech dataset, and convert all flac files to wav format.
@@ -64,7 +72,7 @@ python create_desc_json.py LibriSpeech/dev-clean/ train_corpus.json
 python create_desc_json.py LibriSpeech/test-clean/ valid_corpus.json
 ```
 
-Setup local environment
+(*Optional*) Setup local environment
 ```
 conda create --name voiceAI
 source activate voiceai
@@ -72,14 +80,10 @@ pip install -r requirements.txt
 pip install tensorflow-gpu==1.1.0
 ```
 
-Start Jupyter (and make sure you're using your environment kernel, not your system kernel)
+Start Jupyter, and connect via your IPv4 address:
 ```
-python -m ipykernel install --user --name myenv --display-name "Python (voiceAI)"
-python -c "from keras import backend"
-jupyter notebook 
+jupyter notebook --ip=0.0.0.0 --no-browser
 ```
-
-![select aind-vui kernel](./images/select_kernel.png)
 
 ## Thanks
 
